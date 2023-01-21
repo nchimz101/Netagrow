@@ -1,0 +1,49 @@
+{
+    "alias": "fields",
+    "description": "",
+    "version":"1.1",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Fields\\Providers\\Main"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "global_fields":[
+        {
+            "separator":"Map Box Config",
+            "title": "Map Box token",
+            "key": "MAP_BOX_TOKEN",
+            "value":""
+        },
+        {
+            "separator":"Disqus Config",
+            "title": "Disqus Shortname",
+            "key": "DISQUS_SHORTNAME",
+            "value":"mobidonia-1"
+        }
+    ],
+    "adminmenus":[
+        {
+            "name":"Note statuses",
+            "params":{"type":"notestatus"},
+            "route":"admin.landing.posts",
+            "icon":"ni ni-single-copy-04 text-red"
+        },
+        {
+            "name":"Note types",
+            "params":{"type":"notetype"},
+            "route":"admin.landing.posts",
+            "icon":"ni ni-single-copy-04 text-red"
+        }
+    ],
+    "ownermenus":[
+        {
+            "name":"Fields",
+            "route":"fields.index",
+            "icon":"ni ni-pin-3 text-blue"
+        }
+    ]
+}

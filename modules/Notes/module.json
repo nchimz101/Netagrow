@@ -1,0 +1,29 @@
+{
+    "alias": "notes",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Notes\\Providers\\Main"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "ownermenus":[
+        {
+            "name":"Notes",
+            "params":{"page":"notes"},
+            "route":"fields.index",
+            "icon":"ni ni-ruler-pencil  text-green"
+        }
+    ],
+    "staffmenus":[
+        {
+            "name":"Tasks",
+            "params":{"page":"notes"},
+            "route":"fields.index",
+            "icon":"ni ni-ruler-pencil  text-green"
+        }
+    ]
+}

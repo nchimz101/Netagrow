@@ -1,0 +1,49 @@
+{
+    "alias": "weather",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Weather\\Providers\\Main"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": [],
+    "global_fields":[
+        {
+            "separator":"Agromonitoring",
+            "title": "Agromonitoring API Key",
+            "key": "AGROMONITORING_API_KEY",
+            "value":""
+        }
+    ],
+    "vendor_fields":[
+    {
+        "separator":"Weather configuration",
+        "title":"Units", 
+        "key":"units", 
+        "value":"metric",
+        "ftype":"select",
+        "data":{
+            "metric":"Metric",
+            "imperial":"Imperial"
+        }
+    }],
+    "ownermenus":[
+        {
+            "name":"Weather",
+            "params":{"page":"weather"},
+            "route":"fields.index",
+            "icon":"ni ni-planet text-blue"
+        }
+    ],
+    "staffmenus":[
+        {
+            "name":"Weather",
+            "params":{"page":"weather"},
+            "route":"fields.index",
+            "icon":"ni ni-planet text-blue"
+        }
+    ]
+}
